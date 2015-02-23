@@ -23,9 +23,9 @@ def get_color_func(color_number):
     return color
 
 
-colors = dict(
+color_methods = dict(
     ((color, get_color_func(i))
-    for i, color in enumerate(colors))
+     for i, color in enumerate(colors))
 )
 
-color = type('color', (object,), colors)
+color = type('color', (object,), color_methods)

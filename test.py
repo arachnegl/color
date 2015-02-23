@@ -12,3 +12,10 @@ class ColorTest(unittest.TestCase):
         expected = '\x1b[;31mhi\x1b[0m'
 
         self.assertEqual(got, expected)
+
+    def test_green(self):
+
+        got = color.green('hi')
+        expected = '\x1b[;32mhi\x1b[0m'
+
+        self.assertEqual(got, expected)
